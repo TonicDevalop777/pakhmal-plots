@@ -1,0 +1,38 @@
+.cursor {
+	cursor: none;
+	font-size: 1px;
+}
+
+@keyframes cursor-blink {
+	0% {
+		opacity: 0;
+	}
+}
+
+.cursor::after {
+	content: "";
+	width: 5px;
+	height: 50px;
+	background: #ffffff;
+	display: inline-block;
+	animation: cursor-blink 1s steps(2) infinite;
+}
+.cursor-sm {
+	cursor: none;
+	font-size: 1px;
+}
+
+@keyframes cursor-blink {
+	0% {
+		opacity: 0;
+	}
+}
+
+.cursor-sm::after {
+	content: "";
+	width: 3px;
+	height: 25px;
+	background: #ffffff;
+	display: inline-block;
+	animation: cursor-blink 1s steps(2) infinite;
+}
